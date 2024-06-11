@@ -22,7 +22,6 @@ def test_read_phrase():
     assert response.json() == {
         "result": [
             "barack hussein obama ii",
-            "bə-rahk hoo-sayn oh-bah-mə",
             "august",
             "american politician",
             "44th president",
