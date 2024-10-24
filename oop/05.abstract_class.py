@@ -4,16 +4,16 @@
 #               1. Prevents installation of the class itself
 #               2. Requires children to use inherited abstract methods
 
-from abc import ABC, abstractmethod
+import abc
 
 
-class Vehicle(ABC):
+class Vehicle(abc.ABC):
 
-    @abstractmethod
+    @abc.abstractmethod
     def go(self):
         pass
 
-    @abstractmethod
+    @abc.abstractmethod
     def stop(self):
         pass
 
@@ -37,10 +37,6 @@ class Motorcycle(Vehicle):
 class Boat(Vehicle):
     def go(self):
         print("You sail the Boat")
-
-    # def stop(self):
-    #     print('You anchor the boat')
-
 
 boat = Boat()
 

@@ -31,5 +31,5 @@ library.add_book(book2)
 library.add_book(book3)
 
 print(library.name)
-for book in library.list_books():
-    print(book)
+for b in library.list_books():
+    print(b)
