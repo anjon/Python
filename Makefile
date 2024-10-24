@@ -4,10 +4,10 @@ install:
 		pip install -r requirements.txt
 format:
 	# Format Code
-	black *.py mylib/*.py
+	black *.py mylib/*.py oop/*.py
 lint:
 	# flake8 or pylint
-	pylint --disable=R,C *.py mylib/*.py
+	pylint --disable=R,C *.py mylib/*.py oop/*.py
 test:
 	# test
 	python -m pytest -vv --cov=mylib --cov=main test_*.py 
