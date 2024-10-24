@@ -38,6 +38,7 @@ class Boat(Vehicle):
     def go(self):
         print("You sail the Boat")
 
+
 # boat = Boat()
 
 # boat.go()

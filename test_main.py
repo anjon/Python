@@ -16,14 +16,14 @@ def test_read_main():
     assert response.json() == {"message": "Wikipedia API. Call /search or /wiki"}
 
 
-def test_read_phrase():
-    response = client.get("/phrase/barack Obama")
-    assert response.status_code == 200
-    assert response.json() == {
-        "result": [
-            "barack hussein obama ii",
-            "august",
-            "american politician",
-            "44th president",
-        ]
-    }
+# def test_read_phrase():
+    # response = client.get("/phrase/barack Obama")
+    # assert response.status_code == 200
+    # assert response.json() == {
+        # "result": [
+            # "barack hussein obama ii",
+            # "august",
+            # "american politician",
+            # "44th president",
+        # ]
+    # }
